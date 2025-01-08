@@ -1,0 +1,10 @@
+run = "python app.py"
+language = "python"
+modules = ["python-3.11", "python3"]
+
+[nix]
+channel = "stable-23_05"
+
+[[ports]]
+localPort = 5000
+externalPort = 5000

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Title</title>
+    <style>
+        *{
+            font-family:Roboto;
+        }
+        h1{
+            font-size:40;
+            font-family:Roboto;
+            font-weight:900;
+            text-align:center;
+        }
+        #pp{
+            width:100%;
+            height:300;
+            object-fit: cover;
+        }
+        h2{
+             font-weight:normal;
+             font-size:30;
+            text-align:center;
+        }
+        #container{
+            max-width:520;
+            margin: 0 auto;
+        }
+        #font{
+            font-size:15;
+        }
+       
+        
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="container">
+    <h1>Welcome To Web Title!!</h1>
+    <img id="pp" src="https://b3dc647f-5a78-4e7b-b369-533808dea2a7-00-1v30rjoqsek6z.spock.repl.co:5000/static/pppp.jpg"alt=""  height="320">
+
+<h2>About Us</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<h2 >Open Position</h2>
+    <div id="font">
+        <hr>
+        {% for jobs in jobs %}
+           {% include 'jobitem.html' %}
+        {% endfor %}
+    </div>
+    
+
+        
+       <br>
+    <div>
+        <button type="button" class="btn btn-primary">Contact As</button>
+        <br>
+        <p>Copyright 2022, CubeX</p>
+    </div>
+        
+    </div>
+</body>
+
+</html>
