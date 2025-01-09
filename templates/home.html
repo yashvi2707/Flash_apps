@@ -23,12 +23,16 @@
              font-size:30;
             text-align:center;
         }
-        #container{
-            max-width:520;
-            margin: 0 auto;
-        }
+      
         #font{
             font-size:15;
+        }
+        #container {
+            background-color:yellowgreen;
+            margin: 0 auto; 
+            max-width: 1200px;
+            padding: 0 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
         }
        
         
@@ -38,13 +42,60 @@
 </head>
 
 <body>
-    <div id="container">
+  
+
+        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar scroll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Link
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Link</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+
+<div id="container">
+        <br>
     <h1>Welcome To Web Title!!</h1>
     <img id="pp" src="https://b3dc647f-5a78-4e7b-b369-533808dea2a7-00-1v30rjoqsek6z.spock.repl.co:5000/static/pppp.jpg"alt=""  height="320">
 
 <h2>About Us</h2>
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
+
+
+
+
+        
 <h2 >Open Position</h2>
     <div id="font">
         <hr>
